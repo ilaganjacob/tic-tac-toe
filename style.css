@@ -1,0 +1,105 @@
+.play-board {
+  display: flex;
+  margin: auto;
+  width: 550px;
+  height: 400px;
+  background: rgb(56, 102, 136);
+  justify-content: center;
+}
+
+.X-board,
+.Y-board {
+  width: 170px;
+  margin: 5px;
+  border: 1px dotted transparent;
+}
+
+.board-selected {
+  width: 170px;
+  margin: 5px;
+  border: 1px dotted white;
+}
+
+.X-board:hover,
+.Y-board:hover {
+  border: 1px dotted white;
+}
+
+.play-board h1 {
+  text-align: center;
+  color: white;
+}
+.gaming-board {
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.game-board {
+  display: grid;
+  grid-template-rows: 70px 70px 70px;
+  grid-template-columns: 70px 70px 70px;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#b11,
+#b12,
+#b13,
+#b21,
+#b22,
+#b23 {
+  border-bottom: 1px solid white;
+}
+#b12,
+#b22,
+#b32 {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.AIlevel-board {
+}
+.mode-board {
+  display: flex;
+  justify-content: space-evenly;
+  width: 210px;
+}
+.mode-board div {
+  border: 2px dotted transparent;
+  color: white;
+}
+
+.mode-board div:hover {
+  border-bottom: 2px solid #ba1200;
+}
+
+.night-mode-text {
+  color: #c8e0f4;
+  text-align: center;
+  letter-spacing: 9px;
+}
+
+.night-mode {
+  background: #031927;
+}
+
+.light-mode-text {
+  color: #031927;
+  text-align: center;
+  letter-spacing: 9px;
+}
+.light-mode {
+  background: #c8e0f4;
+}
+
+select {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+  color: white;
+  font-size: inherit;
+}
